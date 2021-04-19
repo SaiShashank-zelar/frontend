@@ -1,10 +1,10 @@
 # FrontEnd:
 ### Install Nginx:-
    * #apt update
-   * # apt install nginx
+   * #apt install nginx
 ### Install NodeJs:-
-   * # apt install nodejs
-   * # apt install npm 
+   * #apt install nodejs
+   * #apt install npm 
 ### Install vue:-
    * #npm install -g @vue/cli
 ### Deploy in default nginx folder:-
