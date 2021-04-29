@@ -13,6 +13,7 @@
    * #cd frontend
    * #npm install
    * #npm run build
+   * #npm start
    * #vi /etc/nginx/sites-available/default
    * #nginx –t
    * #systemctl restart nginx
