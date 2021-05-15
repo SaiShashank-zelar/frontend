@@ -1,5 +1,7 @@
 pipeline {
-  agent Agent
+  agent {
+    label 'todoapp'
+  }
   stages {
     stage('Download Dependencies') {
       steps {
