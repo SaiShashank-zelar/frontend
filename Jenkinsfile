@@ -1,3 +1,5 @@
 @Library('Todoapp') _
 
-Todoapp()
+Todoapp{
+   COMPONENT = 'frontend'
+}
