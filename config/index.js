@@ -33,7 +33,7 @@ module.exports = {
         secure: false
       },
       '/todos': {
-        target: process.env.TODOS_API_ADDRESS || 'http://127.0.0.3:8080',
+        target: process.env.TODOS_API_ADDRESS || 'http://127.0.0.2:8080',
         secure: false
       },
       '/zipkin': {
