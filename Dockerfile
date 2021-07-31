@@ -1,7 +1,6 @@
 FROM        node:lts-alpine
 RUN         mkdir -p /var/www/html
-COPY        frontend /var/www/html/
-WORKDIR     /frontend
+WORKDIR     /var/www/html/frontend
 COPY        / .
 RUN         npm install
 RUN         npm run build
