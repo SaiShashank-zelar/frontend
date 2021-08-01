@@ -1,5 +1,5 @@
 FROM        node:alpine
-RUN         npm install -g @vue/cli &>>$LOG
+RUN         npm install -g @vue/cli
 RUN         mkdir -p /var/www/html
 WORKDIR     /var/www/html/frontend
 COPY        / .
