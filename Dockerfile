@@ -4,7 +4,7 @@ RUN         mkdir -p /var/www/html
 WORKDIR     /var/www/html/frontend
 COPY        / .
 RUN         npm install --unsafe-perm -g node-sass
-RUN         npm rebuild node-sass --sass-binary-name = linux-x64-83
+RUN         npm rebuild node-sass
 FROM        nginx
 COPY        default /etc/nginx/sites-available
 
