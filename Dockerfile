@@ -1,4 +1,4 @@
-FROM        node:lts-alpine
+FROM        node
 RUN         mkdir -p /var/www/html
 WORKDIR     /var/www/html/frontend
 COPY        / .
