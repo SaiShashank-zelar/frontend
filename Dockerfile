@@ -1,6 +1,6 @@
 FROM        node:alpine
 RUN         npm install -g @vue/cli
-CMD         mkdir  /var/frontend
+RUN         mkdir  /var/frontend
 WORKDIR     /var/frontend
 COPY        / . /var/frontend/
 RUN         npm install --unsafe-perm -g node-sass
