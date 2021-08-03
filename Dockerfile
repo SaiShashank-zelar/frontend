@@ -2,7 +2,7 @@ FROM        node:alpine
 RUN         npm install -g @vue/cli
 RUN         mkdir -p /var/www/html
 WORKDIR     /var/www/html/frontend
-RUN         ls
+RUN         dir
 COPY        / .
 RUN         npm install --unsafe-perm -g node-sass
 RUN         npm rebuild node-sass
