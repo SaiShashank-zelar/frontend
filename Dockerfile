@@ -9,6 +9,7 @@ COPY        . /var/frontend
 WORKDIR     /var/frontend
 RUN         npm install --unsafe-perm -g node-sass
 RUN         npm rebuild node-sass
+RUN         ls
 COPY        todo.conf /etc/nginx/sites-available/default
 CMD         ["nginx","-g","daemon off;"]
 
