@@ -7,8 +7,9 @@ RUN         mkdir -p /var/frontend
 WORKDIR     /var/frontend
 COPY        . /var/frontend
 WORKDIR     /var/frontend
-RUN         npm install --unsafe-perm -g node-sass
-RUN         npm rebuild node-sass
+RUN         apt install node-node-sass -y
+RUN         npm install
+RUN         npm run build
 RUN         ls
 COPY        todo.conf /etc/nginx/sites-available/default
 CMD         ["nginx","-g","daemon off;"]
