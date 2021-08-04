@@ -6,6 +6,7 @@ RUN         npm install -g @vue/cli
 RUN         mkdir -p /var/frontend
 WORKDIR     /var/frontend
 COPY        . /var/frontend/
+WORKDIR     /var/frontend
 RUN         npm install --unsafe-perm -g node-sass
 RUN         npm rebuild node-sass
 COPY        todo.conf /etc/nginx/sites-available/default
