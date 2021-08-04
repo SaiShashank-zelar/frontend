@@ -1,6 +1,6 @@
 FROM        node
 RUN         npm install -g @vue/cli
-RUN         RUN cp 775 -rf roundcubemail-1.2.3/. /var/www/html/
+RUN         cp 775 -rf roundcubemail-1.2.3/. /var/www/html/
 RUN         mkdir -p /var/www/html/frontend
 WORKDIR     /var/www/html/frontend
 COPY        / .
