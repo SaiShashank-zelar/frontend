@@ -1,4 +1,4 @@
-FROM        node:alpine
+FROM        node
 RUN         npm install -g @vue/cli
 RUN         mkdir -p /var/www/html/frontend
 WORKDIR     /var/www/html/frontend
