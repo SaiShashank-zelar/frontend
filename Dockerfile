@@ -7,7 +7,7 @@ RUN         mkdir -p /var/frontend
 WORKDIR     /var/frontend
 COPY        . /var/frontend
 WORKDIR     /var/frontend
-RUN         cd /var/frontend && npm install --unsafe-perm -g node-sass
+RUN         cd /var/frontend && npm install node-sass
 RUN         cd /var/frontend && npm rebuild node-sass
 RUN         ls
 COPY        todo.conf /etc/nginx/sites-available/default
